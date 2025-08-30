@@ -1,0 +1,321 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+.header{
+	width: 100%;
+	height: 55px;
+	background-color: rgb(18,18,18);
+	position: fixed;
+}
+.imdb-logo{
+	float: left;
+	left: 8%;
+	position: absolute;
+	margin-top: 10px;
+	border-radius: 8px;
+	height: 32px;
+}
+.material-icons{
+	position: absolute;
+	color: white;
+	margin-left: 14%;
+	margin-top: 15px;
+}
+.menu-text{
+	font-size: 15px;
+	margin-left: 16%;
+	margin-top: 19px;
+	position: absolute;
+	color: rgb(229,229,229);
+	font-family: 'Roboto', sans-serif;
+}
+
+.all{
+	font-family: 'Roboto', sans-serif;
+	width: 42px;
+	height: 22px;
+	position: absolute;
+	background-color: rgb(255,255,255);
+	color: rgb(48,48,48);
+	border-radius: 5px 0px 0px 5px;
+	padding-left: 10px;
+	padding-top: 7px;
+	margin-left: 20%;
+	margin-top: 14px;
+}
+ .arrow .material-icons{
+	position: absolute;
+	margin-bottom: 10px;
+	color: black;
+	margin-left: 22%;
+}
+ .focall{
+	width: 250px;
+	height: 438px;
+	background-color: rgb(20,20,20);
+	position: relative;
+	margin-left: 20%;
+	margin-top: 45px;
+    border-radius: 5px;
+	z-index: 1;
+	visibility: hidden;
+	transition: 0.5s;
+	background-image: url("titles.png");
+	background-repeat: no-repeat;
+	
+}
+.all:hover ~.focall{
+	visibility: visible;
+}
+.text{
+	width: 550px;
+	height: 31px;
+	position: absolute;
+	bottom: inherit;
+	border-radius: 0px;
+	box-sizing: border-box;
+}
+.search{
+	margin-left: 59.3%;
+	height: 29.5px;
+	position: relative;
+	margin-top: 14px;
+	border-radius: 0px 5px 5px 0px;
+}
+.imdbpro{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: rgb(229,229,229);
+	float: right;
+	bottom: inherit;
+}
+.divpro{
+	position: absolute;
+	margin-left: 63%;
+	bottom: 95%;
+}
+.num1{
+	width: 3px;
+	height: 33px;
+	background-color: rgb(42,42,42);
+	position: absolute;
+	margin-left: 69%;
+	bottom: 94%;
+}
+.bookmark{
+	position: absolute;
+	margin-left: 71%;
+	bottom: 100%;
+}
+.watchlist{
+	position: absolute;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+	color: rgb(229,229,229);
+	margin-left: 72.5%;
+	bottom: 95%;
+}
+.sign-in{
+	position: absolute;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+	color: rgb(229,229,229);
+	margin-left: 78%;
+	bottom: 95%;
+}
+.select{
+	width: 250px;
+	height: 350px;
+	background-color: rgb(20,20,20);
+	float: right;
+	position: absolute;
+	color: rgb(229,229,229);
+	font-size: 18px;
+	border-radius: 5px;
+	z-index: 2;
+	margin-left: 69%;
+	visibility: hidden;
+	transform-origin: top;
+	transition: 1s;
+}
+.en{
+	position: absolute;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+	color: rgb(229,229,229);
+	margin-left: 83%;
+	bottom: 95%;
+}
+.aks{
+	position: absolute;
+	width: 600px;
+	height: 280px;
+	background-image:url("aks-imdbpro.png");
+	background-repeat: no-repeat;
+	float: right;
+	margin-left: 28%;
+	visibility: hidden;
+	transition: 0.5s;
+	z-index: 1;
+}
+.focall2:hover~.aks{
+	visibility: visible;
+}
+.focall2{
+	background-color: rgb(18,18,18);
+	width: 80px;
+	height: 30px;
+	position: absolute;
+	margin-left: 62%;
+	bottom: 94%;
+	border: 1px solid rgb(18,18,18);
+}
+.focall2:hover {
+	border: 1px solid  white;
+}
+.enback{
+	background-color: rgb(18,18,18);
+	width: 50px;
+	height: 30px;
+	position: absolute;
+	margin-left: 82.5%;
+	bottom: 94%;
+	border: 1px solid rgb(18,18,18);
+}
+.enback:hover{
+	border: 1px solid white;
+}
+.enback:hover~.select{
+	visibility: visible;
+	transform: rotateX(20deg);
+}
+.enarrow{
+	position: absolute;
+	margin-left: 84.5%;
+	bottom: 100%;
+}
+/*.../////////This is for Mobile Version//////////...*/
+@media only screen and (max-width:450px){
+	*{
+		box-sizing: border-box;
+	}
+	.menu-text{
+		visibility: hidden;
+	}
+	.all{
+		visibility: hidden;
+		width: 30px;
+		margin-left: 80px;
+		position: relative;
+	}
+	.arrow{
+		visibility: hidden;
+		margin-left: 0;
+		margin-top: 0;
+		bottom: 0;
+	}
+	.text{
+		width: 45%;
+		height: 26px;
+		margin-left: 4%;
+		top: 15px;
+		position: fixed;
+		z-index: 2;
+		
+	}
+	.imdbpro{
+		visibility: hidden;
+	}
+	.watchlist{
+		visibility: hidden;
+		margin: 0;
+		bottom: 0;
+	}
+	.divpro{
+		visibility: hidden;
+		margin: 0;
+		bottom: 0;
+	}
+	.bookmark{
+		visibility: hidden;
+	    margin: 0;
+		bottom: 0;
+	}
+	.select{
+		position: fixed;
+		margin-left: 80%;
+		margin-top: 20px;
+	}
+
+	 .aks:disabled {
+		background: url("aks-imdbpro.png");
+		visibility: hidden;
+	}
+	
+	.enarrow{
+		visibility: hidden;
+		margin-left: 0;
+		margin-top: 0;
+		bottom: 0;
+	}
+	.search{
+		position: fixed;
+		margin-top: 16.5px;
+        z-index: 2;
+		height: 23.5px;
+		margin-left: 63.5%;;
+	}
+	.enback{
+		position: fixed;
+		margin-left: 88.5%;
+		top: 15px;
+	}
+	.enback:hover {
+		border: 1px solid white;
+	}
+	.en{
+		position: fixed;
+		font-size: 10px;
+		margin-left: 90%;
+		top: 20px;
+		z-index: 2;
+	}
+	.num1{
+		position: fixed;
+		margin-left: 73%;
+		top: 8px;
+	}	
+	
+	
+	.imdb-logo{
+		position: fixed;
+		margin-left: -30px;
+		width: 50px;
+	}
+
+	.sign-in{
+		font-size: 10px;
+		position: fixed;
+		margin-left: 79%;
+		top: 20px;
+	}
+	.header{
+		width: 100%;
+	}
+	.focall2:disabled {
+	background-color: rgb(18,18,18);
+	width: 80px;
+	height: 30px;
+	position: relative;
+    visibility: visible;
+	}
+	.foc{
+		visibility: hidden;
+	}
+}
